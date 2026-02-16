@@ -1,4 +1,4 @@
-import { Product } from './product'
+import { Product } from './product';
 
 export class Playstation extends Product {
   // TODO: implement class properties, constructor with super(...), and methods
@@ -12,9 +12,12 @@ export class Playstation extends Product {
   getProfile(): string {
     return `${this.name} (Gen ${this.generation})`;
   }
-
   getDiscountPrice(): number {
     const discount = this.price * Product.DISCOUNT_PERCENT / 100;
     return this.price - discount;
   }
 }
+
+
+
+
